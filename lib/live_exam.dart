@@ -46,8 +46,8 @@ class _AssigenmentState extends State<Assigenment> {
                 ),
                 keyboardType: TextInputType.number,
                 inputFormatters: [
-                  FilteringTextInputFormatter.digitsOnly, // only numbers
-                  LengthLimitingTextInputFormatter(11),   // max 11 digits
+                  FilteringTextInputFormatter.digitsOnly,
+                  LengthLimitingTextInputFormatter(11),
                 ],
               ),
               const SizedBox(height: 10),
@@ -82,7 +82,7 @@ class _AssigenmentState extends State<Assigenment> {
                 ),
               )
                   : ListView.builder(
-                shrinkWrap: true, // let it work inside scroll view
+                shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: contacts.length,
                 itemBuilder: (context, index) {
